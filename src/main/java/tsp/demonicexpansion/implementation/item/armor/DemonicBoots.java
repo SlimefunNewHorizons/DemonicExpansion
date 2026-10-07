@@ -1,9 +1,9 @@
 package tsp.demonicexpansion.implementation.item.armor;
 
-import com.github.drakescraft_labs.slimefun4.api.items.ItemSetting;
-import com.github.drakescraft_labs.slimefun4.api.items.settings.IntRangeSetting;
-import com.github.drakescraft_labs.slimefun4.implementation.Slimefun;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.protection.Interaction;
+import io.github.thebusybiscuit.slimefun4.api.items.ItemSetting;
+import io.github.thebusybiscuit.slimefun4.api.items.settings.IntRangeSetting;
+import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.protection.Interaction;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.data.Levelled;

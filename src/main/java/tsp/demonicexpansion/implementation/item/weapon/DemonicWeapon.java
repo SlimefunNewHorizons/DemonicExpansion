@@ -1,6 +1,6 @@
 package tsp.demonicexpansion.implementation.item.weapon;
 
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import tsp.demonicexpansion.implementation.item.AbstractItem;
 import tsp.demonicexpansion.implementation.recipe.DemonicRecipe;
 import cl.jackstar.smartplugin.event.LivingEntityDamageByLivingEntityEvent;

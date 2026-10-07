@@ -1,6 +1,6 @@
 package tsp.demonicexpansion.implementation.item.weapon;
 
-import com.github.drakescraft_labs.slimefun4.api.events.PlayerRightClickEvent;
+import io.github.thebusybiscuit.slimefun4.api.events.PlayerRightClickEvent;
 import org.bukkit.Sound;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.potion.PotionEffect;

@@ -3,7 +3,7 @@ package tsp.demonicexpansion.implementation.entity;
 import org.bukkit.NamespacedKey;
 import org.bukkit.entity.LivingEntity;
 
-import com.github.drakescraft_labs.slimefun4.libraries.dough.data.persistent.PersistentDataAPI;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.data.persistent.PersistentDataAPI;
 
 import java.util.Map;
 import java.util.Optional;

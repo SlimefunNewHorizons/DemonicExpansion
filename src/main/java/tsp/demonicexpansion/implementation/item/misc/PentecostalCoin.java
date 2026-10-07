@@ -1,8 +1,8 @@
 package tsp.demonicexpansion.implementation.item.misc;
 
-import com.github.drakescraft_labs.slimefun4.api.events.PlayerRightClickEvent;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.data.persistent.PersistentDataAPI;
-import com.github.drakescraft_labs.slimefun4.libraries.paperlib.PaperLib;
+import io.github.thebusybiscuit.slimefun4.api.events.PlayerRightClickEvent;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.data.persistent.PersistentDataAPI;
+import io.github.thebusybiscuit.slimefun4.libraries.paperlib.PaperLib;
 import org.bukkit.Location;
 import org.bukkit.NamespacedKey;
 import org.bukkit.Sound;

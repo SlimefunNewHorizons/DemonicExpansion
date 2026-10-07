@@ -1,8 +1,8 @@
 package tsp.demonicexpansion.implementation.item.misc;
 
-import com.github.drakescraft_labs.slimefun4.api.items.ItemSetting;
-import com.github.drakescraft_labs.slimefun4.api.items.settings.IntRangeSetting;
-import com.github.drakescraft_labs.slimefun4.core.attributes.RandomMobDrop;
+import io.github.thebusybiscuit.slimefun4.api.items.ItemSetting;
+import io.github.thebusybiscuit.slimefun4.api.items.settings.IntRangeSetting;
+import io.github.thebusybiscuit.slimefun4.core.attributes.RandomMobDrop;
 import tsp.demonicexpansion.DemonicExpansion;
 import tsp.demonicexpansion.implementation.item.AbstractItem;
 import tsp.demonicexpansion.implementation.recipe.Recipes;

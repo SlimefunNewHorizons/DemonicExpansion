@@ -17,7 +17,7 @@ import tsp.demonicexpansion.implementation.entity.Entities;
 import tsp.demonicexpansion.implementation.entity.DemonicEntity;
 import cl.jackstar.smartplugin.handler.Handler;
 import cl.jackstar.smartplugin.utils.NumberUtils;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.data.persistent.PersistentDataAPI;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.data.persistent.PersistentDataAPI;
 
 import java.util.List;
 import java.util.Set;

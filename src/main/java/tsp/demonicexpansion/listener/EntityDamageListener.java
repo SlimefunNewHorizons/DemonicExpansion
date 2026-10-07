@@ -1,6 +1,6 @@
 package tsp.demonicexpansion.listener;
 
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import org.bukkit.NamespacedKey;
 import org.bukkit.event.EventHandler;
 import org.bukkit.inventory.EntityEquipment;
@@ -12,7 +12,7 @@ import tsp.demonicexpansion.implementation.item.weapon.DemonicWeapon;
 import cl.jackstar.smartplugin.event.LivingEntityDamageByLivingEntityEvent;
 import cl.jackstar.smartplugin.handler.Handler;
 
-import com.github.drakescraft_labs.slimefun4.libraries.dough.data.persistent.PersistentDataAPI;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.data.persistent.PersistentDataAPI;
 
 public class EntityDamageListener extends Handler {
 

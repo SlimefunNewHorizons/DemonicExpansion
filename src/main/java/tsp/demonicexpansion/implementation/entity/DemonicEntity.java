@@ -10,7 +10,7 @@ import tsp.demonicexpansion.DemonicExpansion;
 import cl.jackstar.smartplugin.event.LivingEntityDamageByLivingEntityEvent;
 import cl.jackstar.smartplugin.utils.AttributeUtils;
 
-import com.github.drakescraft_labs.slimefun4.libraries.dough.data.persistent.PersistentDataAPI;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.data.persistent.PersistentDataAPI;
 import cl.jackstar.smartplugin.utils.SerializationUtils;
 import cl.jackstar.smartplugin.utils.StringUtils;
 import cl.jackstar.smartplugin.utils.Validate;

@@ -1,8 +1,8 @@
 package tsp.demonicexpansion.implementation.item.generator;
 
-import com.github.drakescraft_labs.slimefun4.api.items.ItemSetting;
-import com.github.drakescraft_labs.slimefun4.api.items.settings.IntRangeSetting;
-import com.github.drakescraft_labs.slimefun4.core.attributes.EnergyNetProvider;
+import io.github.thebusybiscuit.slimefun4.api.items.ItemSetting;
+import io.github.thebusybiscuit.slimefun4.api.items.settings.IntRangeSetting;
+import io.github.thebusybiscuit.slimefun4.core.attributes.EnergyNetProvider;
 import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
 import org.bukkit.Location;
 import org.bukkit.Material;

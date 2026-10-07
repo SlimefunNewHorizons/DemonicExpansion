@@ -1,6 +1,6 @@
 package tsp.demonicexpansion.implementation.item;
 
-import com.github.drakescraft_labs.slimefun4.utils.HeadTexture;
+import io.github.thebusybiscuit.slimefun4.utils.HeadTexture;
 import org.bukkit.Material;
 import tsp.demonicexpansion.implementation.item.armor.DemonicBoots;
 import tsp.demonicexpansion.implementation.item.armor.DemonicChestplate;
