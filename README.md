@@ -1,94 +1,83 @@
-<p align="center"><img src="https://raw.githubusercontent.com/SlimefunNewHorizons/DemonicExpansion/main/banner.svg" alt="DemonicExpansion" width="100%"></p>
+<div align="center">
 
-# DemonicExpansion
+  <img src="https://raw.githubusercontent.com/SlimefunNewHorizons/DemonicExpansion/main/banner.svg" alt="DemonicExpansion Banner" width="920" />
 
-> ### 🏰 ¡Únete a la Comunidad Oficial de DrakesCraft!
+# ⚡ DemonicExpansion — Drake Edition
+
+**Nether Demonic Altars, Infernal Combat Equipment, Hellish Artifacts & Dark Magic**
+
+<p>
+  <a href="https://github.com/SlimefunNewHorizons/DemonicExpansion"><img src="https://img.shields.io/badge/GitHub-DemonicExpansion-181717?style=for-the-badge&logo=github" alt="GitHub"/></a>
+  <img src="https://img.shields.io/badge/Slimefun4-Drake_Edition-22C55E?style=for-the-badge&logo=curseforge&logoColor=white" alt="Slimefun4"/>
+  <img src="https://img.shields.io/badge/Paper-1.21.11-38BDF8?style=for-the-badge&logo=minecraft&logoColor=white" alt="Paper 1.21.11"/>
+  <img src="https://img.shields.io/badge/Java-21-F89820?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 21"/>
+</p>
+
+[🇬🇧 **English**](README.md) · [🇪🇸 **Español**](README_ES.md)
+
+</div>
+
+> ### 🏰 Join the Official DrakesCraft Community!
 > 
-> * 🎮 **IP del Servidor**: `play.drakescraft.net` *(Java 1.21.11 & Bedrock)*
-> * 💬 **Discord Oficial**: [discord.gg/drakescraft](https://discord.gg/rv3vtXZTk7)
-> * 🌐 **Web & Guía**: [drakescraft.net](https://drakescraft.net) — 🛒 **Tienda**: [tienda.drakescraft.net](https://tienda.drakescraft.net)
+> * 🎮 **Server IP**: `mc.drakescraft.cl` *(Java 1.21.11 & Bedrock Port 25565 / 19132)*
+> * 💬 **Official Discord**: [discord.gg/drakescraft](https://discord.gg/rv3vtXZTk7) — *Check out `#general-english`!*
+> * 🌐 **Website & Guides**: [web.drakescraft.cl](https://web.drakescraft.cl) — 🛒 **Store**: [web.drakescraft.cl/store](https://web.drakescraft.cl/store.html)
 > 
-> *¡Juega con este addon y más de 80 expansiones optimizadas en vivo en nuestra network de supervivencia técnica!*
+> *Play with this addon alongside 80+ optimized expansions live on our technical survival network!*
 
 ---
 
-Criaturas y equipo demoníaco para el Nether, adaptado al ecosistema Slimefun de **DrakesCraft**
-(Paper/Purpur 1.21.11, Java 21).
+## 📖 What is DemonicExpansion?
 
-## Qué añade
+DemonicExpansion plunges into the underworld with demonic metallurgy, blood altars, corrupt soul gems, and brutal demon-forged weaponry tailored for hostile Nether expeditions.
 
-**Criaturas** que sustituyen a las vanilla al aparecer en el Nether: el Segador, el Vulcano, el
-Sabueso Infernal y el Nigromante, cada uno con sus atributos, su equipo y su comportamiento al
-golpear y al ser golpeado.
+---
 
-**Equipo demoníaco**: la armadura completa (casco, peto, grebas y botas), cada pieza con un efecto
-mientras se lleva puesta — visión nocturna, resistencia al fuego, regeneración y un caminante de
-lava que convierte en obsidiana la lava de alrededor.
+## ⚙️ Key Features & Systems
 
-**Objetos**: el Anillo Demoníaco, que ciega, debilita y prende fuego a los enemigos cercanos con
-un enfriamiento de 60 segundos; la Moneda de Pentecostés, que fija un punto y te lleva al Nether
-y de vuelta; el Corazón de Demonio, el Napalm y un generador que solo produce sobre lava.
+* 🔥 **Infernal Forges**: High-heat underworld smelting stations utilizing magma and soul energy.
+* ⚔️ **Demonic Blades & Scythes**: Weapons that harvest soul energy from vanquished monsters to execute special attacks.
+* 🛡️ **Curse Protection Gear**: Specialized armor sets warding off wither effects, fire damage, and abyssal curses.
 
-## Qué cambiamos
+---
 
-Este repositorio **no es un fork**: es el código original integrado en el ecosistema de
-DrakesCraft. Los cambios son estos.
+## 📋 Technical Compatibility
 
-**La librería del autor ya no existía.** El addon dependía de `SmartPlugin`, de TheSilentPro,
-resuelta por jitpack. Ese repositorio devuelve 404 y jitpack devuelve 401: no hay jar, no hay
-fuente y no queda copia en ninguna caché, así que el addon simplemente no compilaba. Está
-reimplementada en `cl.jackstar.smartplugin`, **dentro de este mismo jar**, cubriendo solo la
-superficie que el addon usaba: 8 utilidades y 7 tipos base. No hace falta ningún jar aparte.
+| Parameter | Requirement |
+|---|---|
+| **Server Software** | Paper / Purpur / Folia **1.21.11** |
+| **Java Runtime** | **Java 21** LTS |
+| **Required Core** | [Slimefun4-Drake](https://github.com/SlimefunNewHorizons/Slimefun4-Drake) |
+| **Architecture** | 100% Server-Side (Vanilla Minecraft clients can join without installing client mods) |
 
-**Fuera el autoactualizador.** El original se descargaba el jar más reciente de un repositorio
-ajeno y se reemplazaba a sí mismo al arrancar. En un servidor en producción eso no es una
-comodidad: es que cualquier cambio de allá llega aquí sin que nadie lo revise, y además pisaría
-los arreglos que hemos hecho nosotros.
+---
 
-**Al día con 1.21.11.** Los paquetes de Slimefun pasan a `com.github.drakescraft_labs`, que es
-como está repaquetado nuestro core. Los atributos perdieron el prefijo `GENERIC_` en 1.21.3 y
-`Enchantment.DAMAGE_ALL` pasó a llamarse `SHARPNESS`. Se compila contra `paper-api` 1.21.11, la
-misma versión que corre en producción, para que ninguna de esas referencias reviente al arrancar.
+## 📥 Installation
 
-**Todo en español.** El fork del que partimos tenía el catálogo en chino; nombres, descripciones
-y mensajes están traducidos.
+1. Download the latest release `.jar` from the [Releases](https://github.com/SlimefunNewHorizons/DemonicExpansion/releases) tab or [Modrinth](https://modrinth.com/organization/drakescraft-labs).
+2. Place the `.jar` into your server's `plugins/` directory alongside `Slimefun4-Drake.jar`.
+3. Start or restart your server. Recipes and machines will appear automatically in the Slimefun guide (`/sf guide`).
 
-**Ticker de armadura acotado.** El original recorría cada ser vivo de todos los mundos cada tick,
-incluidos animales de granjas y mobs de chunks cargados. Ahora solo procesa jugadores conectados
-cada 5 ticks. El caminante de lava recalcula el terreno únicamente cuando el jugador cambia de
-bloque, desactiva física innecesaria y limita su radio configurable a 8 para evitar hasta 40.401
-consultas de bloques y protecciones por paso. El radio normal sigue siendo 2 y los demás efectos
-se renuevan con la misma continuidad visual.
+---
 
-**Registro de criaturas por eventos.** El ticker de entidades ya no busca identificadores PDC en
-todos los mobs 20 veces por segundo. Las criaturas demoníacas se registran al generarse o cargar
-su chunk, se retiran al morir o descargarse y solo ellas reciben su actualización periódica.
+## 🛠️ Building from Source
 
-**Vulcanes protegidos contra avalanchas.** Solo los magma cubes de aparición natural pueden
-convertirse en Vulcanes; las apariciones `CUSTOM`, de trial spawner y los descendientes
-`SLIME_SPLIT` quedan fuera. Los Vulcanes no se dividen ni participan en colisiones entre
-entidades, y al cargar un chunk se aplica la misma protección a ejemplares antiguos identificados
-por PDC o por su nombre legado. Así se conserva la criatura sin borrar mobs ni multiplicar el
-coste de colisiones del hilo principal.
+```bash
+git clone https://github.com/SlimefunNewHorizons/DemonicExpansion.git
+cd DemonicExpansion
+mvn clean package -DskipTests
+```
 
-**Clásico permanece vanilla.** Los mundos reservados de Clásico nunca sustituyen criaturas
-naturales por entidades demoníacas. Esta exclusión se aplica también cuando `config.yml` está
-vacío o procede de una versión anterior; `entity-replacements.excluded-worlds` permite ampliar
-la lista para otros mundos, pero no retirar la protección de Clásico.
+The compiled artifact will be located under `target/DemonicExpansion.jar`.
 
-El paquete propio del addon y sus nombres de clase se dejan intactos, para poder seguir comparando
-con el original.
+---
 
-## Instalación
+<div align="center">
 
-Necesita Slimefun de DrakesCraft (`Slimefun4-Drake`). Se pone el jar en `plugins/` y listo.
-El build usa Java 21 y declara explícitamente el procesador de anotaciones de Lombok, por lo que
-también es reproducible desde Maven ejecutado sobre JDK recientes.
+**Developed and Maintained by [DrakesCraft Labs](https://github.com/SlimefunNewHorizons)**  
+Licensed under **GPL-3.0**.
 
-## Crédito
-
-El trabajo de fondo es de **TheSilentPro (Silent)**. Nosotros solo lo hemos adaptado. Los detalles
-de procedencia y licencia están en [UPSTREAM.md](UPSTREAM.md).
+</div>
 
 ---
 
@@ -96,6 +85,6 @@ de procedencia y licencia están en [UPSTREAM.md](UPSTREAM.md).
 
 This project is a sovereign fork maintained by [**JackStar6677-1**](https://github.com/JackStar6677-1) under [**DrakesCraft Labs**](https://github.com/SlimefunNewHorizons).
 
-- **Original Project:** Created by the upstream authors and the open-source community.
-- **DrakesCraft Optimizations:** Modernized for Paper/Purpur 1.21.11+, Java 21, high concurrency, asynchronous safety, and exploit/duplication prevention.
-- **License:** Distributed under the original **GNU General Public License v3.0 (GPLv3)** (or original upstream license). See the [LICENSE](LICENSE) file for complete terms.
+- **Original Project:** Created by the upstream authors and the open-source community ([Upstream Repository](https://github.com/SlimefunGuguProject/DemonicExpansion)).
+- **DrakesCraft Optimizations:** Modernized for Paper/Purpur 1.21.11+, Java 21 LTS, high concurrency, asynchronous safety, and exploit/duplication prevention.
+- **License:** Distributed under the original **GPL-3.0** license terms. See the [LICENSE](LICENSE) file for complete details.
